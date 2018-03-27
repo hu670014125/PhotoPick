@@ -3,12 +3,11 @@ apply plugin: 'com.github.dcendents.android-maven'
 group='com.github.Awent'
 
 android {
-    compileSdkVersion rootProject.ext.android.compileSdkVersion
-    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    compileSdkVersion 26
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        targetSdkVersion 26
         versionCode 13
         versionName "1.8"
     }
@@ -22,8 +21,8 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile "com.android.support:appcompat-v7:${rootProject.ext.android.supportVersion}"
-    compile "com.android.support:recyclerview-v7:${rootProject.ext.android.supportVersion}"
+    compile "com.android.support:appcompat-v7:26.1.0"
+    compile "com.android.support:recyclerview-v7:26.1.0"
     compile "com.facebook.fresco:fresco:${rootProject.ext.android.frescoVersion}"
     // 支持 GIF 动图，需要添加
     compile "com.facebook.fresco:animated-gif:${rootProject.ext.android.frescoVersion}"

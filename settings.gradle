@@ -1,1 +1,1 @@
-include ':photoLibrary', ':simaple'
+include ':library', ':simaple'
